@@ -1,90 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Portfolio</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="travel1.html">Cox's Bazar</a></li>
+          <li class="nav-item"><a class="nav-link" href="travel2.html">Sajek Valley</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-<div class="container">
+  <main class="py-4">
+    <div class="container">
+      <div class="section-box text-center fade-up">
+        <h1 class="mb-3">Hello, I'm Shimanto</h1>
+        <p class="mb-3">I am learning HTML, CSS and Bootstrap. This is my simple portfolio website.</p>
+        <div class="alert alert-info mb-3">This website is designed to work on mobile, tablet and desktop screens.</div>
+        <a href="about.html" class="btn btn-primary me-2">Learn More</a>
+        <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#homeModal">Open Modal</button>
+      </div>
 
-<a class="navbar-brand" href="#">My Portfolio</a>
+      <div class="row g-4">
+        <div class="col-lg-4 fade-up">
+          <div class="card custom-card text-center h-100">
+            <div class="card-body">
+              <img src="images/profile.jpg" alt="Profile Photo" class="rounded-circle img-fluid profile-photo mx-auto d-block mb-3 border">
+              <h2 class="h4">Shimanto <span class="badge bg-success">Student</span></h2>
+              <p class="mb-3">Beginner Web Developer</p>
+              <a href="contact.html" class="btn btn-primary">Contact Me</a>
+            </div>
+          </div>
+        </div>
 
-<ul class="navbar-nav ms-auto">
+        <div class="col-lg-8 fade-up">
+          <div class="section-box h-100">
+            <h2 class="h4 mb-3">My Travel Gallery</h2>
+            <div id="homeCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
+              <div class="carousel-inner rounded border">
+                <div class="carousel-item active">
+                  <img src="images/coxsbazar.jpg" class="d-block w-100" alt="Cox's Bazar">
+                </div>
+                <div class="carousel-item">
+                  <img src="images/sajek.jpg" class="d-block w-100" alt="Sajek Valley">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+            <p class="mb-0">I like to learn web design and also share some of my favorite travel places.</p>
+          </div>
+        </div>
+      </div>
 
-<li class="nav-item">
-<a class="nav-link active" href="index.html">Home</a>
-</li>
+      <div class="section-box fade-up">
+        <h2 class="h4 mb-3">My Introduction Video</h2>
+        <div class="ratio ratio-16x9 rounded overflow-hidden border">
+          <video controls>
+            <source src="media/intro.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
 
-<li class="nav-item">
-<a class="nav-link" href="about.html">About</a>
-</li>
+    <div class="modal fade" id="homeModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5">Welcome</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Thank you for visiting my portfolio website.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-<li class="nav-item">
-<a class="nav-link" href="travel1.html">Cox's Bazar</a>
-</li>
+  <footer class="bg-dark text-white text-center py-3 mt-4">
+    <div class="container">
+      <p class="mb-1">&copy; 2026 Ihtishamul Haq Shimanto. All rights reserved.</p>
+      <p class="mb-0">
+        <a href="https://github.com/shims007" class="text-white">GitHub</a> |
+        <a href="https://www.linkedin.com/in/shims007" class="text-white">LinkedIn</a> |
+        <a href="mailto:shimantohaq@gmail.com" class="text-white">Email</a>
+      </p>
+    </div>
+  </footer>
 
-<li class="nav-item">
-<a class="nav-link" href="travel2.html">Sajek Valley</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="contact.html">Contact</a>
-</li>
-
-</ul>
-
-</div>
-</nav>
-
-<div class="container mt-4 text-center">
-
-<h1>Hello, I'm Shimanto</h1>
-
-<p>I am learning HTML, CSS and Bootstrap.</p>
-
-<div class="card mx-auto mb-4" style="width:300px">
-
-<img src="images/profile.jpg" class="card-img-top">
-
-<div class="card-body">
-
-<h5 class="card-title">
-John Doe <span class="badge bg-success">Student</span>
-</h5>
-
-<p class="card-text">Beginner Web Developer</p>
-
-<a href="about.html" class="btn btn-primary">Learn More</a>
-
-</div>
-
-</div>
-
-<h3>My Introduction Video</h3>
-
-<video width="600" controls class="mt-3">
-<source src="media/intro.mp4" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-
-</div>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-<footer class="bg-dark text-white text-center py-3 mt-4">
-  <div class="container">
-    <p>&copy; 2026 Ihtishamul Haq Shimanto. All rights reserved.</p>
-    <p>
-      <a href="https://github.com/shims007" class="text-white">GitHub</a> |
-      <a href="https://www.linkedin.com/in/shims007" class="text-white">LinkedIn</a> |
-      <a href="mailto:shimantohaq@gmail.com" class="text-white">Email</a>
-    </p>
-  </div>
-</footer>
-
 </html>

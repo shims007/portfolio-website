@@ -1,66 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Sajek Valley</title>
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio | Sajek Valley</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">My Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto text-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="travel1.html">Cox's Bazar</a></li>
+          <li class="nav-item"><a class="nav-link active" href="travel2.html">Sajek Valley</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-<div class="container">
+  <main class="py-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-8 fade-up">
+          <div class="card custom-card h-100">
+            <img src="images/sajek.jpg" class="card-img-top place-img" alt="Sajek Valley">
+            <div class="card-body">
+              <h1 class="h4">Sajek Valley <span class="badge bg-success">Adventure</span></h1>
+              <p>Sajek Valley is known for its green hills, clouds and peaceful weather.</p>
+              <button class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#sajekModal">Explore</button>
+              <a href="travel1.html" class="btn btn-outline-success">See Another Place</a>
+            </div>
+          </div>
+        </div>
 
-<a class="navbar-brand" href="#">My Portfolio</a>
+        <div class="col-lg-4 fade-up">
+          <div class="section-box h-100">
+            <h2 class="h5 mb-3">Quick Facts</h2>
+            <div class="table-responsive border rounded">
+              <table class="table table-bordered mb-0">
+                <tr>
+                  <th>Type</th>
+                  <td>Hill station</td>
+                </tr>
+                <tr>
+                  <th>View</th>
+                  <td>Clouds and hills</td>
+                </tr>
+                <tr>
+                  <th>Trip Style</th>
+                  <td>Adventure</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<ul class="navbar-nav ms-auto">
+    <div class="modal fade" id="sajekModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title fs-5">Sajek Valley</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Sajek Valley is a simple and beautiful place for enjoying nature.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="travel1.html">Cox's Bazar</a></li>
-<li class="nav-item"><a class="nav-link active" href="travel2.html">Sajek Valley</a></li>
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+  <footer class="bg-dark text-white text-center py-3 mt-4">
+    <div class="container">
+      <p class="mb-1">&copy; 2026 Ihtishamul Haq Shimanto. All rights reserved.</p>
+      <p class="mb-0">
+        <a href="https://github.com/shims007" class="text-white">GitHub</a> |
+        <a href="https://www.linkedin.com/in/shims007" class="text-white">LinkedIn</a> |
+        <a href="mailto:shimantohaq@gmail.com" class="text-white">Email</a>
+      </p>
+    </div>
+  </footer>
 
-</ul>
-
-</div>
-</nav>
-
-
-<div class="container mt-4">
-
-<div class="card" style="width:900px">
-
-<img src="images/sajek.jpg" class="card-img-top">
-
-<div class="card-body">
-
-<h5 class="card-title">Sajek Valley <span class="badge bg-success">Adventure</span></h5>
-
-<p>
-Sajek Valley is a beautiful hill station in Bangladesh.
-</p>
-
-<button class="btn btn-success">Explore</button>
-
-</div>
-
-</div>
-
-</div>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
-<footer class="bg-dark text-white text-center py-3 mt-4">
-  <div class="container">
-    <p>&copy; 2026 Ihtishamul Haq Shimanto. All rights reserved.</p>
-    <p>
-      <a href="https://github.com/shims007" class="text-white">GitHub</a> |
-      <a href="https://www.linkedin.com/in/shims007" class="text-white">LinkedIn</a> |
-      <a href="mailto:shimantohaq@gmail.com" class="text-white">Email</a>
-    </p>
-  </div>
-</footer>
-
 </html>
